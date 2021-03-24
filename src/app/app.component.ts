@@ -3,8 +3,18 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'pipes-app-angular';
+  nombre: string = 'IgnAcio HenríqUEZ';
+  valor: number = 1000;
+  obj = {
+    nombre: 'Ignacio',
+  };
+
+  mostrarNombre() {
+    console.log(this.nombre);
+    console.log(this.valor);
+    console.log(this.obj);
+  }
 }
